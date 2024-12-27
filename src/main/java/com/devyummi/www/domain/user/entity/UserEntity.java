@@ -1,9 +1,6 @@
 package com.devyummi.www.domain.user.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,4 +18,6 @@ public class UserEntity {
 
     private String nickname;
 
+    @Enumerated(EnumType.STRING)
+    private UserRoleType role;
 }
