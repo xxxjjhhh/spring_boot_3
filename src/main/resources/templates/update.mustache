@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>user update</title>
+</head>
+<body>
+
+    <h1>user update page</h1>
+    <hr>
+
+    <form action="/user/update/{{USER.username}}" method="post" name="updateForm">
+        <input type="password" name="password" placeholder="password"/>
+        <input type="text" name="nickname" placeholder="nickname" value="{{USER.nickname}}"/>
+        <input type="submit" value="Update"/>
+    </form>
+
+</body>
+</html>
